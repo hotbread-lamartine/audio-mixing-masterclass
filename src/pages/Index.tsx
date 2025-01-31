@@ -1,7 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { TutorialCard } from "@/components/TutorialCard";
 import { CategoryCard } from "@/components/CategoryCard";
-import { AudioWaveform, Sliders, Mic2, Music2 } from "lucide-react";
+import { AudioWaveform, Sliders, Mic2, Music2, Monitor, Settings, Computer, Gauge, WaveformIcon } from "lucide-react";
 
 const featuredTutorials = [
   {
@@ -35,6 +35,11 @@ const categories = [
   { title: "Dynamics", icon: <Sliders className="w-8 h-8" /> },
   { title: "Vocal Production", icon: <Mic2 className="w-8 h-8" /> },
   { title: "Mastering", icon: <Music2 className="w-8 h-8" /> },
+  { title: "Reaper", icon: <Computer className="w-8 h-8" /> },
+  { title: "Cubase", icon: <Monitor className="w-8 h-8" /> },
+  { title: "Luna", icon: <Settings className="w-8 h-8" /> },
+  { title: "Traitement du Son", icon: <WaveformIcon className="w-8 h-8" /> },
+  { title: "Mesure du Son", icon: <Gauge className="w-8 h-8" /> },
 ];
 
 export default function Index() {
@@ -54,7 +59,7 @@ export default function Index() {
 
         <section>
           <h2 className="text-3xl font-bold mb-8">Browse by Category</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
             {categories.map((category) => (
               <CategoryCard key={category.title} {...category} />
             ))}
