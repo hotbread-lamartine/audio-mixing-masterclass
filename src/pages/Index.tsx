@@ -1,7 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { TutorialCard } from "@/components/TutorialCard";
 import { CategoryCard } from "@/components/CategoryCard";
-import { AudioWaveform, Sliders, Mic2, Music2, Monitor, Settings, Computer, Gauge, WaveformIcon } from "lucide-react";
+import { AudioWaveform, Sliders, Mic2, Music2, Monitor, Settings, Computer, Gauge } from "lucide-react";
 
 const featuredTutorials = [
   {
@@ -38,7 +38,7 @@ const categories = [
   { title: "Reaper", icon: <Computer className="w-8 h-8" /> },
   { title: "Cubase", icon: <Monitor className="w-8 h-8" /> },
   { title: "Luna", icon: <Settings className="w-8 h-8" /> },
-  { title: "Traitement du Son", icon: <WaveformIcon className="w-8 h-8" /> },
+  { title: "Traitement du Son", icon: <AudioWaveform className="w-8 h-8" /> },
   { title: "Mesure du Son", icon: <Gauge className="w-8 h-8" /> },
 ];
 
