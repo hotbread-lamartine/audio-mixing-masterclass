@@ -40,17 +40,41 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-image: radial-gradient(circle at 1px 1px, hsl(var(--primary) / 0.15) 1px, transparent 0);
+    background-size: 40px 40px;
   }
 }
 
 .hero-gradient {
-  background: linear-gradient(to right, hsl(var(--primary)), hsl(265 89% 78% / 0.2));
+  background: linear-gradient(102.3deg, rgba(147,39,143,1) 5.9%, rgba(234,172,232,1) 64%, rgba(246,219,245,1) 89%);
 }
 
 .card-hover {
-  transition: transform 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .card-hover:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px -15px hsl(var(--primary) / 0.5);
+}
+
+.category-card {
+  transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
+  background: linear-gradient(to bottom right, hsl(var(--background)), hsl(var(--card)));
+}
+
+.category-card:hover {
+  border-color: hsl(var(--primary));
   transform: translateY(-4px);
+  box-shadow: 0 12px 24px -8px hsl(var(--primary) / 0.3);
+}
+
+.category-icon {
+  transition: all 0.3s ease-in-out;
+}
+
+.category-card:hover .category-icon {
+  transform: scale(1.2);
+  color: hsl(var(--primary));
 }

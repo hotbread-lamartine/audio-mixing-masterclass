@@ -9,12 +9,12 @@ interface CategoryCardProps {
 
 export function CategoryCard({ title, icon, className }: CategoryCardProps) {
   return (
-    <Card className={cn("cursor-pointer transition-colors hover:bg-primary/10", className)}>
-      <CardContent className="flex flex-col items-center justify-center p-6 text-center">
-        <div className="mb-4 text-primary">
+    <Card className={cn("category-card cursor-pointer", className)}>
+      <CardContent className="flex flex-col items-center justify-center p-6 text-center space-y-3">
+        <div className="category-icon text-primary/80">
           {icon}
         </div>
-        <h3 className="font-semibold">{title}</h3>
+        <h3 className="font-semibold text-lg">{title}</h3>
       </CardContent>
     </Card>
   );
