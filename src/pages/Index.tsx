@@ -1,7 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { TutorialCard } from "@/components/TutorialCard";
 import { CategoryCard } from "@/components/CategoryCard";
-import { Waveform, Sliders, Mic2, Music2 } from "lucide-react";
+import { AudioWaveform, Sliders, Mic2, Music2 } from "lucide-react";
 
 const featuredTutorials = [
   {
@@ -31,7 +31,7 @@ const featuredTutorials = [
 ] as const;
 
 const categories = [
-  { title: "EQ & Filtering", icon: <Waveform className="w-8 h-8" /> },
+  { title: "EQ & Filtering", icon: <AudioWaveform className="w-8 h-8" /> },
   { title: "Dynamics", icon: <Sliders className="w-8 h-8" /> },
   { title: "Vocal Production", icon: <Mic2 className="w-8 h-8" /> },
   { title: "Mastering", icon: <Music2 className="w-8 h-8" /> },
